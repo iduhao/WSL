@@ -8,12 +8,13 @@
 将打开wsl，将init.sh放到/目录（Ubuntu的根目录），即/init.sh，记得要提前安装openssh-server(apt-get install openssh-server)，应该默认安装好了;
 
 #### 3、设置权限
-需要默认以root运行，所以在cmd命令下，先查看安装的Ubuntu版本
+！！！这条特别重要。如果不设置默认root启动WSL子系统。就会出现ssh服务启动，但是xshell连接不上。很多网页上都把这条一带而过，很容易忽略。折腾了一晚上。差点放弃。
+
+需要先设置WSL默认以root运行，所以在cmd命令下，先查看安装的Ubuntu版本
 （cmd下）使用
 	ubuntu config --default-user root
 ​	**Ubuntu18.04**版本时使用下面的命令：
 ​	ubuntu1804 config --default-user root
-
 #### 4、重启电脑
 
 重启电脑后，wsl默认开始运行了，就可以使用xshell直接连了，不需要别的操作
