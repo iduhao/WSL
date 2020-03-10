@@ -8,7 +8,7 @@
 将打开wsl，将init.sh放到/目录（Ubuntu的根目录），即/init.sh，记得要提前安装openssh-server(apt-get install openssh-server)，应该默认安装好了;
 
 #### 3、设置权限
-！！！这条特别重要。如果不设置默认root启动WSL子系统。就会出现ssh服务启动，但是xshell连接不上。很多网页上都把这条一带而过，很容易忽略。折腾了一晚上。差点放弃。
+```！！！```这条特别重要。如果不设置默认root启动WSL子系统。就会出现ssh服务启动，但是xshell连接不上。很多网页上都把这条一带而过，很容易忽略。折腾了一晚上。差点放弃。
 
 需要先设置WSL默认以root运行，所以在cmd命令下，先查看安装的Ubuntu版本
 （cmd下）使用
@@ -24,4 +24,3 @@
 https://blog.csdn.net/qq_18286031/article/details/102847379
 
 https://blog.csdn.net/qq_18286031/article/details/102847496
-
